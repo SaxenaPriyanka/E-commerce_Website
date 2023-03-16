@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo.jpg" type="image">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Artisan Avenue</title>
+</head>
+<body>
+    <nav>
+        <div class="navTop">
+            <div class="navItem">
+                <img src="./img/logo.jpg" width="135px" height="80px">
+            </div>
+            <div class="navItem">
+                <div class="search"> 
+                    <label for="Search">Search Products: </label>
+                    <input type="text" placeholder="   Type here to search" class="searchInput" id="Search">
+                    <button type="button">GO</button>
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Special Offer for Limited Time Only!</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">TEXTILES</h3>
+            <h3 class="menuItem">HANDCRAFTED JEWELLERY</h3>
+            <h3 class="menuItem">CERAMICS</h3>
+            <h3 class="menuItem">WOODWORK</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem"> <!--Textile-->
+                <img src="./img/textile.png" class="sliderImg" height="250px" width="300px">
+                <div class="sliderBg"></div>   <!--Slider background circle-->
+                <h1 class="sliderTitle">TEXTILES FROM <br>AROUND THE WORLD</h1>
+                <h2 class="sliderPrice">Starting from <br> $200!</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+            <div class="sliderItem"> <!--Jewellery-->
+                <img src="./img/jewellery.png" class="sliderImg" height="250px" width="300px">
+                <div class="sliderBg"></div>   <!--Slider background circle-->
+                <h1 class="sliderTitle">HANDCRAFTED JEWELLERY FROM THE FINEST ARTISANS</h1>
+                <h2 class="sliderPrice">Starting from <br> $60!</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+            <div class="sliderItem"> <!--Ceramics-->
+                <img src="./img/Pottery2.png" class="sliderImg" height="250px" width="300px">
+                <div class="sliderBg"></div>   <!--Slider background circle-->
+                <h1 class="sliderTitle">CERAMICS BY MASTER CRAFTSMEN</h1>
+                <h2 class="sliderPrice">Starting from <br> $40!</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+            <div class="sliderItem"> <!--Woodwork-->
+                <img src="./img/woodworking.png" class="sliderImg" height="250px" width="300px">
+                <div class="sliderBg"></div>   <!--Slider background circle-->
+                <h1 class="sliderTitle">WOODWORK BY SEASONED ARTISANS</h1>
+                <h2 class="sliderPrice">Starting from <br> $150!</h2>
+                <button class="buyButton">BUY NOW!</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

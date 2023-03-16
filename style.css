@@ -1,0 +1,145 @@
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput{     
+    /*Makes the search box transparent*/
+    border:none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{     
+    /*Makes the placeholder green*/
+    color: yellow;
+}
+
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid blueviolet;
+    cursor:pointer;
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 100px;
+    cursor: pointer;
+    color: darkgray;
+    font-weight: 500;
+}
+
+.slider{
+    background: url("https://cdn.pixabay.com/photo/2015/12/01/15/43/black-1072366_1280.jpg");
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out; /*for smooth transition between the slider items*/
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderBg{ /*slider background*/
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    /*background-color: lightcoral;*/ /*if putting same background colour for each slider item*/
+}
+
+.sliderImg{
+    z-index: 1; /*for bringing the background circle under the image*/
+}
+
+.sliderTitle{
+    position: absolute;
+    top:10%;
+    right:4%;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1; /*for bringing the background circle under the title*/
+}
+
+.sliderPrice{
+    position: absolute;
+    top:10%;
+    left:10%;
+    color: white;
+    font-size: 35px;
+    font-weight: 200;
+    text-align: center;
+    border: 7px solid yellow;
+    border-radius: 25px;
+    z-index: 1; /*for bringing the background circle under the price*/
+}
+
+.buyButton{
+    position: absolute;
+    top:65%;
+    right:12%;
+    color: white;
+    border: 2px solid yellow;
+    background-color: grey;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    z-index: 1; /*for bringing the background circle under the button*/
+    cursor:pointer;
+}
+
+.buyButton:hover{
+    background-color: wheat;
+    color: black;
+}
+
+.sliderItem:nth-child(1) .sliderBg{ /*for first slider item*/ 
+    background-color: lightcoral;
+}
+
+.sliderItem:nth-child(2) .sliderBg{ /*for second slider item*/ 
+    background-color: lightskyblue;
+}
+
+.sliderItem:nth-child(3) .sliderBg{ /*for third slider item*/ 
+    background-color: lightgreen;
+}
+
+.sliderItem:nth-child(4) .sliderBg{ /*for fourth slider item*/ 
+    background-color: orange;
+}
