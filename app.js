@@ -8,5 +8,10 @@ menuItems.forEach((item, index) =>{
     });
 });
 
+document.querySelector('.clickable').addEventListener('click', function() {
+  alert('FAQ page opens.');
+});
+
+
 
 
