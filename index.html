@@ -41,28 +41,36 @@
                 <div class="sliderBg"></div>   <!--Slider background circle-->
                 <h1 class="sliderTitle">TEXTILES FROM </br> AROUND THE WORLD</h1>
                 <h2 class="sliderPrice">Starting from </br> $200!</h2>
+                <a href="#product">   <!--For linking the button with the product-->
                 <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
             <div class="sliderItem"> <!--Jewellery-->
                 <img src="./img/jewellery.png" class="sliderImg" height="250px" width="300px">
                 <div class="sliderBg"></div>   <!--Slider background circle-->
                 <h1 class="sliderTitle">HAND CRAFTED JEWELLERY </br>FROM THE </br>FINEST ARTISANS</h1>
                 <h2 class="sliderPrice">Starting from <br> $60!</h2>
+                <a href="#product">
                 <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
             <div class="sliderItem"> <!--Ceramics-->
                 <img src="./img/Pottery2.png" class="sliderImg" height="250px" width="300px">
                 <div class="sliderBg"></div>   <!--Slider background circle-->
                 <h1 class="sliderTitle">CERAMICS BY </br>MASTER CRAFTSMEN</h1>
                 <h2 class="sliderPrice">Starting from <br> $40!</h2>
+                <a href="#product">
                 <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
             <div class="sliderItem"> <!--Woodwork-->
                 <img src="./img/woodworking.png" class="sliderImg" height="250px" width="300px">
                 <div class="sliderBg"></div>   <!--Slider background circle-->
                 <h1 class="sliderTitle">WOODWORK BY</br> SEASONED ARTISANS</h1>
                 <h2 class="sliderPrice">Starting from <br> $150!</h2>
+                <a href="#product">
                 <button class="buyButton">BUY NOW!</button>
+                </a>
             </div>
         </div>
     </div>
@@ -89,7 +97,7 @@
         </div>
     </div>
     <!--For different products in each category.-->
-    <div class="product">
+    <div class="product" id="product">
             <img src="./img/Chikankari1.jpg" alt="productImg" class="productImg">
             <div class="productDetails">
                 <!--
@@ -108,6 +116,39 @@
                     <div class="productSelection">5</div>
                 </div>
                  <button class="productButton">BUY NOW</button>
+            </div>
+            <div class="payment">
+                <h1 class="payTitle">Personal Information</h1>
+                <span>
+                    <label class="payLabel">First and Last Name</label>
+                    <input type="text" placeholder="Name" class="payInput">
+                </span>
+                <span>
+                    <label class="payLabel">Email</label>
+                    <input type="email" placeholder="Email address" class="payInput">
+                </span>
+                <span>
+                    <label class="payLabel">Phone number</label>
+                    <input type="text" placeholder="Number" class="payInput">
+                </span>
+                <span>
+                    <label class="payLabel">Address</label>
+                    <input type="text" placeholder="Address" class="payInput">
+                </span> 
+                <h1 class="payTitle">Card Information</h1>
+                <img src="./img/visa-and-mastercard-logo.png" alt="" class="cardIcons">
+                <span><label class="payLabel">Card Number</label>
+                    <input type="text" placeholder="Card number" class="payInput">
+                </span>
+                <div class="cardInfo">
+                    <label class="payLabel">Expiry Date</label>
+                    <input type="text" placeholder="MM" class="payInput sm">
+                    <input type="text" placeholder="YYYY" class="payInput sm">
+                    <label class="payLabel">CVV</label>
+                    <input type="password" placeholder="CVV" class="payInput sm">
+                </div>
+                <button class="payButton">Checkout</button>
+                <span class="close">X</span>
             </div>
     </div>
     <script src="./app.js"></script>

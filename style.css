@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto Slab', sans-serif;
     padding: 0;
@@ -298,3 +302,82 @@ nav{
     color: white;
 }
 
+.payment{
+    width: 450px;
+    height: 500px;
+    background-color: rgb(169, 167, 167);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 15px 30px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 10px 10px 21px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 21px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 21px 3px rgba(0,0,0,0.75);
+}
+
+.payTitle{
+    font-size: 25px;
+    color: white;
+}
+
+.payLabel{
+    font-size: 15px;
+    font-weight: 10px;
+    color: white;
+    text-align: left;
+    flex: 1;  
+}
+
+.payInput{
+    padding: 8px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 2px solid grey;
+    flex: 1;  
+}
+
+.cardIcons{
+    width: 20%;
+    display: flex;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sm{
+    width: 30%;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: red;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 1px;
+}

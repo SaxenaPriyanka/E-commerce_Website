@@ -138,6 +138,7 @@ menuItems.forEach((item, index) =>{
 
         //For selecting first product as initial
         currProductImg.src = choosenProduct.productSelections[0].img //first image to show in that category
+        currProductDesc.textContent = choosenProduct.productSelections[0].desc
         currProductPrice.textContent = "$" + choosenProduct.productSelections[0].price 
 
     });
@@ -152,3 +153,29 @@ currProductSelections.forEach((productSelection,index) => {
         currProductPrice.textContent = "$" + choosenProduct.productSelections[index].price;
     });
 });
+
+//for product chosen to be coral and the rest of the product selections to be black 
+currProductSelections.forEach((productSelection,index) => {
+    productSelection.addEventListener("click", () => {
+        currProductSelections.forEach((productSelection) => {
+            productSelection.style.backgroundColor = "black";
+        });
+        productSelection.style.backgroundColor = "coral";
+    });
+});
+
+//for payment page
+const productButton = document.querySelector(".productButton");
+const payment = document.querySelector(".payment");
+const close = document.querySelector(".close");
+
+//for payment page to appear when BUY NOW is clicked
+productButton.addEventListener("click",() => {   
+    payment.style.display = "flex";
+});
+
+//for payment page to be closed when cancel is clicked
+close.addEventListener("click",() => {
+    payment.style.display = "none";
+});
+
