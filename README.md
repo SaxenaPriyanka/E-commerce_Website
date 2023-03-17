@@ -18,4 +18,8 @@ Responsive design techniques have been used to ensure the application is optimiz
 
 The web application was built to provide a global platform to the artisans and to showcase the stories behind these creations, while also providing a unique shopping experience for consumers who are interested in buying handmade and one-of-a-kind products.
 
-## **SCREENSHOTS**
+## **SCREENSHOTS & WALKTHROUGH VIDEO**
+
+#### Image Credits
+
+Pixabay, Pexels and Shutterstock

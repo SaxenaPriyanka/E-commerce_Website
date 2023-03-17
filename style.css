@@ -35,6 +35,13 @@ nav{
     color: yellow;
 }
 
+.searchButton{
+    cursor:pointer;
+    background-color:darkgray;
+    color: black;
+    font-weight: 600;
+}
+
 .limitedOffer{
     font-size: 20px;
     border-bottom: 2px solid blueviolet;
@@ -180,9 +187,9 @@ nav{
 
 .featureDesc{
     color: gray;
-    width: 200px;
+    width: 210px;
     height: 50px;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
 }
 
 .clickable {
@@ -200,13 +207,14 @@ nav{
     position: relative;
     align-items: center;
     display: flex;
+    text-align: center;
 }
 
 .productImg{
     width: 30%;
     float: left;
-    margin-right: 20px; /* to add some space between the image and text */
-    margin-left: 60px;
+    margin-right: 80px; /* to add some space between the image and text */
+    margin-left: 160px;
 }
 
 .productDetails{
@@ -214,12 +222,14 @@ nav{
     top: 0%;
     left: 0;
     width: 40%;
-    padding: 50%;
+    margin-left: 20px;
 }
 
 .productHeading{
     font-size: 55px;
     font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 /*
@@ -229,43 +239,62 @@ nav{
 }
 */
 
-.productDesc{
+.productDesc, .productCountry{
     font-size: 15px;
     color: gray;
+    margin-bottom: 30px;
+}
+.productPrice{
+    color: black;
 }
 
 .productSelections{
     display: flex;
+    justify-content: center;  /*to align the selections under the description*/
 }
 
 .productSelection{
-    width: 80px;
-    height: 30px;
+    display: flex; /*to align the selections under the description*/
+    align-items: center;  /*to align the selections under the description*/
     text-align: center;
+    justify-content: center; /*to align the words in the center of their container*/
+    width: 50px;
+    height: 30px;
     font-weight: 400;
     border-radius: 5px;
     background-color: black;
     margin-right: 15px;
     cursor: pointer;
     color: white;
-    margin-bottom: 20;
+    margin-bottom: 20px;
+    font-size: large;
 }
 
-.productSelection:last-child{
-    background-color: blue;
+.productSelection:hover{
+    background-color:lightcoral;
+    color: white;
 }
+
+/*to make every nth element different coloured*/
+/*
+.productSelection:nth-child(even){
+    background-color: black;
+    color: white;
+}
+*/
 
 .productButton{
-    float: right;
+    /*float: right;*/
+    justify-content: center;
     padding: 10px 20px;
-    background-color: black;
+    background-color:rgb(19, 19, 187);
     color: white;
     font-weight: 600;
     cursor: pointer;
 }
 
 .productButton:hover{
-    background-color:rgb(51, 192, 51);
-    color: black;
-
+    background-color:rgb(24, 125, 158);
+    color: white;
 }
+
