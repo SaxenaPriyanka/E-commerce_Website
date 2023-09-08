@@ -122,7 +122,7 @@ const currProductImg = document.querySelector(".productImg");   //for current pr
 const currProductTitle = document.querySelector(".productHeading");
 const currProductCountry = document.querySelector(".productCountry");
 const currProductDesc = document.querySelector(".productDesc");
-const currProductSelections = document.querySelectorAll(".productSelection");  //used querySelectorAll as there are multiple selections
+const currProductSelections = document.querySelector(".productSelections"); //used querySelectorAll as there are multiple selections
 const currProductPrice = document.querySelector(".productPrice");
 
 menuItems.forEach((item, index) =>{
@@ -141,9 +141,49 @@ menuItems.forEach((item, index) =>{
         currProductDesc.textContent = choosenProduct.productSelections[0].desc
         currProductPrice.textContent = "$" + choosenProduct.productSelections[0].price 
 
+    }); 
+
+    /*for dynamic product selections, the choosenPorduct variable is updated based on the 
+    clicked category*/
+    item.addEventListener("click", () => {
+        wrapper.style.transform = `translateX(${-100 * index}vw)`;
+        
+        // Update choosenProduct based on the clicked category
+        choosenProduct = products[index];
+
+        // Call the function to update product selections
+        updateProductSelections();
+
+        // Update other product details as needed
+        currProductTitle.textContent = choosenProduct.title;
+        currProductCountry.textContent = choosenProduct.country;
+        // ...
     });
 });
 
+//dynamically generating product selections based on no. of products in the selected category
+function updateProductSelections() {
+    currProductSelections.innerHTML = ""; // Clearing existing product selections
+
+    // Generating product selections dynamically
+    choosenProduct.productSelections.forEach((product, index) => {
+        const productSelection = document.createElement("div");
+        productSelection.classList.add("productSelection");
+        productSelection.textContent = index + 1;
+
+        productSelection.addEventListener("click", () => {
+            currProductImg.src = product.img;
+            currProductDesc.textContent = product.desc;
+            currProductPrice.textContent = "$" + product.price;
+        });
+
+        currProductSelections.appendChild(productSelection);
+    });
+}
+
+updateProductSelections(); // Calling function to initially populate product selections
+
+/*for static product selections
 //for array of items
 //to change the image depending on what product number is selected 
 currProductSelections.forEach((productSelection,index) => {
@@ -163,6 +203,7 @@ currProductSelections.forEach((productSelection,index) => {
         productSelection.style.backgroundColor = "coral";
     });
 });
+*/
 
 //for payment page
 const productButton = document.querySelector(".productButton");
