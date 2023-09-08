@@ -381,3 +381,208 @@ nav{
     cursor: pointer;
     padding: 1px;
 }
+
+.gallery{
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(226, 252, 252);
+}
+
+.galleryHeading{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.galleryItem{
+    flex: 1;
+    font-weight: 450;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: white;
+    padding: 5px 15px;
+}
+
+.galleryImg{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.galleryTitle{
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    background-color: black;
+}
+
+.galleryDesc{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60%;
+    width: 30%;
+    text-align: center;
+}
+
+.goTop {
+    --offset: 50px; 
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px;
+    left: calc(100% - 70px); /*to bring the arrow on the right side*/
+    place-self: end;
+    margin-top: calc(100vh + var(--offset)); /* appears only when screen is scrolled*/
+    scroll-behavior: smooth;
+    
+    /*styling*/
+    text-decoration: none;
+    padding: 17px;
+    color: lightpink;
+    font-weight: bold;
+    background: darkblue;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.footer{
+    display: flex;
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+.fMenuTitle{
+    font-size: 16px;
+}
+.fList{
+    padding: 0;
+    list-style:none;
+}
+
+.fListItem{
+    margin-bottom: 10px;
+    color: grey;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footerRight{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    justify-content: space-evenly;
+}
+
+.fInput{
+    padding: 5px;
+}
+
+.fButton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.fIcon{
+    display: flex;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    padding: 12px;
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+/*For making the website responsive*/
+@media screen and (max-width:480px){
+    .nav{
+        padding: 20px;
+    }
+
+    .limitedOffer{
+        /*flex-wrap: wrap;*/
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .navBottom{
+        flex-wrap: wrap;
+    }
+
+    .menuItem{
+        margin: 10px;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .slider{
+        clip-path: none;
+    }
+
+    .sliderImg{
+       width: 50%; 
+       height: 70%;
+    }
+
+    .sliderBg{
+        width: 70%;
+        height: 100%;
+    }
+
+    .sliderTitle{
+        display: none;
+    }
+
+    .sliderPrice{
+        top: unset;
+        bottom: 0;
+        left: 0;
+        width: 20%;
+        border: 0;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+    .buyButton{
+        top:unset;
+        bottom: 0;
+        right: 0;
+    }
+
+    .features{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .featureTitle{
+        margin-bottom: 30px;
+    }
+}
