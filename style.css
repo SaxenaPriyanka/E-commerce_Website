@@ -274,7 +274,7 @@ nav{
     font-size: large;
 }
 
-.productSelection:hover{
+.productSelection:hover, .productSelection.coral {
     background-color:lightcoral;
     color: white;
 }

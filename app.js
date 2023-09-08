@@ -161,6 +161,8 @@ menuItems.forEach((item, index) =>{
     });
 });
 
+let selectedProductIndex = 0; //initializing first product selected
+
 //dynamically generating product selections based on no. of products in the selected category
 function updateProductSelections() {
     currProductSelections.innerHTML = ""; // Clearing existing product selections
@@ -170,8 +172,22 @@ function updateProductSelections() {
         const productSelection = document.createElement("div");
         productSelection.classList.add("productSelection");
         productSelection.textContent = index + 1;
-
+ 
         productSelection.addEventListener("click", () => {
+            //for coral coloration of the button of the selected product
+            // Checking if the selectedProductIndex is within valid bounds
+            if (selectedProductIndex >= 0 && selectedProductIndex < choosenProduct.productSelections.length) {
+                // Removing coral color from the previously selected product
+                const prevSelectedProduct = currProductSelections.children[selectedProductIndex];
+                if (prevSelectedProduct) {
+                    prevSelectedProduct.classList.remove("coral");
+                }
+            }
+
+            selectedProductIndex = index; // Updating selected product index
+
+            productSelection.classList.add("coral"); // Adding color to the newly selected product
+
             currProductImg.src = product.img;
             currProductDesc.textContent = product.desc;
             currProductPrice.textContent = "$" + product.price;
