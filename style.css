@@ -49,13 +49,22 @@ nav{
 .limitedOffer{
     font-size: 20px;
     border-bottom: 2px solid blueviolet;
-    cursor:pointer;
+    cursor: default;
 }
 
 .navBottom{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navBottom2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 22px;
+    align-items: right;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .menuItem{
@@ -287,7 +296,7 @@ nav{
 }
 */
 
-.productButton{
+.productButton, .productButtonCart{
     /*float: right;*/
     justify-content: center;
     padding: 10px 20px;
@@ -297,7 +306,7 @@ nav{
     cursor: pointer;
 }
 
-.productButton:hover{
+.productButton:hover, .productButtonCart:hover{
     background-color:rgb(24, 125, 158);
     color: white;
 }

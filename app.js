@@ -2,9 +2,13 @@ const wrapper = document.querySelector(".sliderWrapper")
 const menuItems = document.querySelectorAll(".menuItem")
 //querySelectorAll was used to select the array of all matching elements
 
-document.querySelector('.clickable').addEventListener('click', function() {
+document.querySelector('.clickable').addEventListener('click', function() { // for FAQ page
   alert('FAQ page opens.');
 });
+
+document.querySelector('.clickable2').addEventListener('click', function() { // for cart page
+    alert('Cart page opens.');
+  });
 
 //for changing the product selection based on color, etc.
 const products = [
@@ -254,6 +258,11 @@ close.addEventListener("click",() => {
     payment.style.display = "none";
 });
 
+//for add-to-cart
+document.querySelector('.productButtonCart').addEventListener('click', function() { // for add-to-cart button
+    alert('Product added to Cart!');
+  });
+
 //for gallery slider 
 const gallerySliderWrappers = document.querySelectorAll(".gallerySliderWrapper");
 
@@ -269,4 +278,3 @@ menuItems.forEach((item, index) => {
     gallerySliderWrappers[index].classList.remove("hidden");
   });
 });
-
