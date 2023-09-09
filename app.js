@@ -257,18 +257,15 @@ close.addEventListener("click",() => {
 //for gallery slider 
 const gallerySliderWrappers = document.querySelectorAll(".gallerySliderWrapper");
 
-// Remove the "hidden" class from the first gallery slider wrapper
-gallerySliderWrappers[0].classList.remove("hidden");
-
-// Add click event listeners to menu items
+//Added click event listeners to menu items
 menuItems.forEach((item, index) => {
   item.addEventListener("click", () => {
-    // Hide all gallery slider wrappers by adding the "hidden" class
+    //Hiding all gallery slider wrappers by adding the "hidden" class
     gallerySliderWrappers.forEach(wrapper => {
       wrapper.classList.add("hidden");
     });
 
-    // Remove the "hidden" class from the corresponding gallery slider wrapper
+    //Removing the "hidden" class from the corresponding gallery slider wrapper
     gallerySliderWrappers[index].classList.remove("hidden");
   });
 });
