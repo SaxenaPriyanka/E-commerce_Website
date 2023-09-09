@@ -102,7 +102,7 @@ const products = [
             {
                 code:"c5",
                 img: "./img/China_Porcelain5.jpg",
-                desc:"Experience the artistry and versatility of the Chinese ceramic dragon rice eyes porcelain set, a comprehensive collection consisting of 28 exquisite pieces. This set includes 2 serving platters, 2 square sauce dispensers, 4 rice bowls, 4 spoons, 4 serving bowls, 4 shallow plates/bowls, 4 saucers, and 4 small plates/shallow bowls. It's not just a dinner set; it's a complete culinary experience, bringing the elegance of Chinese porcelain and the allure of the dragon motif to your dining table.",
+                desc:"Experience the artistry and versatility of the Chinese ceramic dragon porcelain set, a comprehensive collection consisting of 28 exquisite pieces. This set includes 2 serving platters, 2 square sauce dispensers, 4 rice bowls, 4 spoons, 4 serving bowls, 4 shallow plates/bowls, 4 saucers, and 4 small plates/shallow bowls. It's not just a dinner set; it's a complete culinary experience, bringing the elegance of Chinese porcelain and the allure of the dragon motif to your dining table.",
                 price:1500,
             },
         ],
@@ -252,5 +252,24 @@ productButton.addEventListener("click",() => {
 //for payment page to be closed when cancel is clicked
 close.addEventListener("click",() => {
     payment.style.display = "none";
+});
+
+//for gallery slider 
+const gallerySliderWrappers = document.querySelectorAll(".gallerySliderWrapper");
+
+// Remove the "hidden" class from the first gallery slider wrapper
+gallerySliderWrappers[0].classList.remove("hidden");
+
+// Add click event listeners to menu items
+menuItems.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    // Hide all gallery slider wrappers by adding the "hidden" class
+    gallerySliderWrappers.forEach(wrapper => {
+      wrapper.classList.add("hidden");
+    });
+
+    // Remove the "hidden" class from the corresponding gallery slider wrapper
+    gallerySliderWrappers[index].classList.remove("hidden");
+  });
 });
 
