@@ -87,6 +87,24 @@ const products = [
                 desc:"These ceramic hand-painted plates come in a set of 6 and are beautifully adorned with intricate designs, making them a perfect addition to any dinner party or family gathering. Handcrafted by skilled artisans, each plate is unique and adds a touch of elegance to any table setting.",
                 price:280,
             },
+            {
+                code:"c3",
+                img: "./img/China_Porcelain3.jpg",
+                desc:"Crafted with precision and care, these ceramic soup bowls, hand-painted in exquisite detail, are sold as a set of two. Known as gaiwan, or bowls with lids, they marry functionality with artistic allure. Meticulously crafted by talented artisans, each gaiwan is a unique masterpiece, elevating your dining experience with both practicality and timeless elegance.",
+                price:150,
+            },
+            {
+                code:"c4",
+                img: "./img/China_Porcelain4.jpg",
+                desc:"Elevate your dining experience with these ceramic soup spoons, where artistry meets functionality. Sold as a set of four, each spoon is a canvas of unique hand-painted designs, adding a touch of creativity to your every meal. Crafted to perfection, these spoons not only serve but also adorn your table with individuality and charm.",
+                price:50,
+            },
+            {
+                code:"c5",
+                img: "./img/China_Porcelain5.jpg",
+                desc:"Experience the artistry and versatility of the Chinese ceramic dragon rice eyes porcelain set, a comprehensive collection consisting of 28 exquisite pieces. This set includes 2 serving platters, 2 square sauce dispensers, 4 rice bowls, 4 spoons, 4 serving bowls, 4 shallow plates/bowls, 4 saucers, and 4 small plates/shallow bowls. It's not just a dinner set; it's a complete culinary experience, bringing the elegance of Chinese porcelain and the allure of the dragon motif to your dining table.",
+                price:1500,
+            },
         ],
     },
     {

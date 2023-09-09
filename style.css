@@ -390,12 +390,21 @@ nav{
     background-color: rgb(226, 252, 252);
 }
 
+.gallerySliderWrapper{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(226, 252, 252);
+}
+
 .galleryHeading{
     font-size: 40px;
     font-weight: 600;
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
+    color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -431,6 +440,7 @@ nav{
     height: 60%;
     width: 30%;
     text-align: center;
+    color: black;
 }
 
 .goTop {
