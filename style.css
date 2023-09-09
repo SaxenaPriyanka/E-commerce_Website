@@ -329,7 +329,7 @@ nav{
     font-size: 15px;
     font-weight: 10px;
     color: white;
-    text-align: left;
+    text-align: center;
     flex: 1;  
 }
 
@@ -349,6 +349,7 @@ nav{
 .cardInfo{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .sm{
